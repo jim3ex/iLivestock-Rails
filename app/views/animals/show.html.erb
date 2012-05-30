@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Eid:</b>
+  <%= @animal.eid %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @animal.age %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @animal.gender %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @animal.weight %>
+</p>
+
+<p>
+  <b>Draft list:</b>
+  <%= @animal.draft_list %>
+</p>
+
+<p>
+  <b>Bcs:</b>
+  <%= @animal.bcs %>
+</p>
+
+<p>
+  <b>Extra info:</b>
+  <%= @animal.extra_info %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @animal.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_animal_path(@animal) %> |
+<%= link_to 'Back', animals_path %>

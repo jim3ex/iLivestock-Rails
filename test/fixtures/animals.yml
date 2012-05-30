@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  eid: MyString
+  age: 1.5
+  gender: MyString
+  weight: 1.5
+  draft_list: MyString
+  bcs: MyString
+  extra_info: MyString
+  date: 2012-05-30
+
+two:
+  eid: MyString
+  age: 1.5
+  gender: MyString
+  weight: 1.5
+  draft_list: MyString
+  bcs: MyString
+  extra_info: MyString
+  date: 2012-05-30

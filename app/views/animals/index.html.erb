@@ -1,0 +1,37 @@
+<h1>Listing animals</h1>
+
+<table>
+  <tr>
+    <th>Eid</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Weight</th>
+    <th>Draft list</th>
+    <th>Bcs</th>
+    <th>Extra info</th>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @animals.each do |animal| %>
+  <tr>
+    <td><%= animal.eid %></td>
+    <td><%= animal.age %></td>
+    <td><%= animal.gender %></td>
+    <td><%= animal.weight %></td>
+    <td><%= animal.draft_list %></td>
+    <td><%= animal.bcs %></td>
+    <td><%= animal.extra_info %></td>
+    <td><%= animal.date %></td>
+    <td><%= link_to 'Show', animal %></td>
+    <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
+    <td><%= link_to 'Destroy', animal, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Animal', new_animal_path %>
